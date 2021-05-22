@@ -1,3 +1,5 @@
+--// THIS CASHFARM IS MAINLY FOR THE STREETS \\--
+
 getgenv().CashFarm = true
 
 local Player = game:GetService("Players").LocalPlayer
