@@ -1,3 +1,5 @@
+--// THIS IS A SIMPLE MASS REPORT \\--
+
 getgenv().MassReport = true -- execute getgenv().MassReport = false to turn it off
 local Players = game:GetService("Players")
 
