@@ -1,7 +1,7 @@
+getgenv().Noclip = false
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
-local Noclip = false
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
