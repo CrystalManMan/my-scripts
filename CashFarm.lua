@@ -72,3 +72,9 @@ game:GetService("Workspace").ChildAdded:Connect(function(child)
         end
     end
 end)
+
+pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LEWISLEWISLEWISLEWISLEWIS/my-scripts/main/Noclip.lua"))()
+end)
+wait()
+getgenv().Noclip = true
