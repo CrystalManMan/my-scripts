@@ -1,0 +1,43 @@
+local MT = getrawmetatable(game)
+local NC = MT.__namecall
+setreadonly(MT, false)
+
+MT.__namecall = newcclosure(function(self, ...)
+    local A = {...}
+    local GNCM = getnamecallmethod() or get_namecall_method()
+    
+    if GNCM == "FireServer" and self.Name == "MainEvent" then
+        return wait(9e9)
+    end
+    
+    return NC(self, unpack(A))
+end)
+
+setreadonly(MT, true)
+
+function RAC()
+    while wait() do
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("") then
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                if v:IsA("Script") then
+                    if v.Name == "" then
+                        v:Destroy()
+                    end
+                end
+            end
+        end
+    end
+    
+    while wait() do
+        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("") then
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+                if v:IsA("Script") then
+                    if v.Name == "" then
+                        v:Destroy()
+                    end
+                end
+            end
+        end
+    end
+end
+RAC()
