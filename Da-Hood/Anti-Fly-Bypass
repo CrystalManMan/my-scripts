@@ -15,6 +15,17 @@ end)
 
 setreadonly(MT, true)
 
+function Notification(text)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Da Hood",
+        Text = text,
+        Icon = "rbxassetid://0",
+        Duration = 3,
+    })
+end
+
+Notification("Anti Fly Bypass by zefify/REVlENGE")
+
 function RAC()
     while wait() do
         if game:GetService("Players").LocalPlayer.Character:FindFirstChild("") then
