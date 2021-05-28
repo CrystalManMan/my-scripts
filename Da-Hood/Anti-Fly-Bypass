@@ -1,3 +1,5 @@
+--// EXECUTE BEFORE GAME LOADS \\--
+
 local MT = getrawmetatable(game)
 local NC = MT.__namecall
 setreadonly(MT, false)
