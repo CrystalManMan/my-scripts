@@ -14,7 +14,6 @@ MT.__namecall = newcclosure(function(self, ...)
     
     return NC(self, unpack(A))
 end)
-
 setreadonly(MT, true)
 
 function Notification(text)
