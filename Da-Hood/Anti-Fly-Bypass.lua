@@ -29,19 +29,19 @@ Notification("Anti Fly Bypass by zefify/REVlENGE")
 
 function RAC()
     for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-        if v:IsA("Script") and v.Name == "LocalScript" then
+        if v:IsA("Script") and v.Name == "LocalScript" and v.Disabled == false then
             v:Destroy()
         end
     end
-    while wait() do
-        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("") then
-            game:GetService("Players").LocalPlayer.Character:FindFirstChild(""):Destroy()
-        else
-            if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("") then
-                game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(""):Destroy()
-            end
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChild("") then
+        game:GetService("Players").LocalPlayer.Character:FindFirstChild(""):Destroy()
+    else
+        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("") then
+            game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(""):Destroy()
         end
     end
 end
 
-RAC()
+game:GetService("RunService").Stepped:Connect(function()
+    RAC()
+end)
