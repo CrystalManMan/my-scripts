@@ -16,7 +16,7 @@
     Flamethrower
 ]]--
 
-getgenv().Gun = "TacticalShotgun" -- change this to whatever gun you want
+getgenv().Gun = "TacticalShotgun" -- change this to whatever gun you want to buy
 getgenv().CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
 
 if getgenv().Gun == "TacticalShotgun" then
