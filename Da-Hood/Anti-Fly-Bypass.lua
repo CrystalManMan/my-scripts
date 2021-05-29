@@ -1,5 +1,3 @@
---// EXECUTE BEFORE GAME LOADS \\--
-
 local MT = getrawmetatable(game)
 local NC = MT.__namecall
 setreadonly(MT, false)
@@ -30,7 +28,7 @@ Notification("Anti Fly Bypass by zefify/REVlENGE")
 function RAC()
     for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
         if v:IsA("Script") and v.Name == "LocalScript" and v.Disabled == false then
-            v:Destroy()
+            v.Disabled = true
         end
     end
     if game:GetService("Players").LocalPlayer.Character:FindFirstChild("") then
