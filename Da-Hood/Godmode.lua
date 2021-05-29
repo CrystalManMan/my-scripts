@@ -13,4 +13,5 @@ function Godmode()
         Notification("God mode is now on, Reset to turn god mode off")
     end
 end
+
 Godmode()
