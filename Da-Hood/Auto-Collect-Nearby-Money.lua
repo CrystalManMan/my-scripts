@@ -1,3 +1,5 @@
+getgenv().CollectNearbyMoney = true
+
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
         Title = "Da Hood",
@@ -21,5 +23,7 @@ function FindMoneyNearby()
 end
 
 game:GetService("RunService").Stepped:Connect(function()
-    FindMoneyNearby()
+    if getgenv().CollectNearbyMoney == true then
+        FindMoneyNearby()
+    end
 end)
