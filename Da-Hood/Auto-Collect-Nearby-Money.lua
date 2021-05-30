@@ -7,7 +7,7 @@ function Notification(text)
     })
 end
 
-Notification("Auto Collect Cash Nearby by zefify/REVlENGE")
+Notification("Auto Collect Nearby Money by zefify/REVlENGE")
 
 function FindMoneyNearby()
     for i,v in pairs(game:GetService("Workspace").Ignored.Drop:GetChildren()) do
