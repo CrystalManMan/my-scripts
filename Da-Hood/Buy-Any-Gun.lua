@@ -15,9 +15,10 @@
     SilencerAR
     AK47
     Flamethrower
+    DrumGun
 ]]--
 
-getgenv().Gun = "TacticalShotgun" -- change this to whatever gun you want to buy
+getgenv().Gun = "TacticalShotgun" -- Change this to whatever gun you want to buy
 getgenv().CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
 
 function Notification(text)
@@ -128,6 +129,14 @@ else
                                                         fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flamethrower] - $7500"].ClickDetector)
                                                         wait(0.25)
                                                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+                                                    else
+                                                        if getgenv().Gun == "DrumGun" then
+                                                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[DrumGun] - $3000"].Head.CFrame
+                                                            wait(0.25)
+                                                            fireclickdetector(game:GetService("Workspace").Ignored.Shop["[DrumGun] - $3000"].ClickDetector)
+                                                            wait(0.25)
+                                                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+                                                        end
                                                     end
                                                 end
                                             end
