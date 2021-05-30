@@ -18,7 +18,7 @@ function DropMoney(Amount)
     end
 end
 
-while MoneyDrop do
+while getgenv().MoneyDrop do
     DropMoney(Money) -- Loop drops the amount of cash you set
     wait(15) -- Im not sure what the delay on this is, change this if you know what the delay is
 end
