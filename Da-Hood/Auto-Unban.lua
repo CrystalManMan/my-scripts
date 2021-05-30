@@ -24,7 +24,7 @@ local Value = Instance.new("BoolValue", Character.BodyEffects)
 Value.Name = "Dead"
 
 game:GetService("Players").LocalPlayer.Character.Humanoid.Died:Connect(function()
-    if getgenv().AutoUnban then
+    if getgenv().AutoUnban == true then
         wait(4.9)
         game:GetService("Players").LocalPlayer.Character:ClearAllChildren()
         local Character = game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
