@@ -1,3 +1,14 @@
+function Notification(text)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Da Hood",
+        Text = text,
+        Icon = "rbxassetid://0",
+        Duration = 3,
+    })
+end
+
+Notification("Auto Collect Cash Nearby by zefify/REVlENGE")
+
 function FindMoneyNearby()
     for i,v in pairs(game:GetService("Workspace").Ignored.Drop:GetChildren()) do
         if v.Name == "MoneyDrop" then
