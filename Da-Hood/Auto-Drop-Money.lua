@@ -1,4 +1,4 @@
-getgenv().MoneyDrop = true -- Execute getgenv().CashDrop = false to turn off the cash drop
+getgenv().MoneyDrop = true -- Execute getgenv().MoneyDrop = false to turn off the cash drop
 getgenv().Money = 100 -- Put this above 100 or lower than 10000
 
 function DropMoney(Amount)
