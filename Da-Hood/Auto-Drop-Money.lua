@@ -13,7 +13,9 @@ end
 Notification("Auto Drop Money by zefify/REVlENGE")
 
 function DropMoney(Amount)
-    game:GetService("ReplicatedStorage").MainEvent:FireServer("DropMoney", Amount)
+    if game:GetService("Players").LocalPlayer.DataFolder.Currency.Value > Amount then
+        game:GetService("ReplicatedStorage").MainEvent:FireServer("DropMoney", Amount)
+    end
 end
 
 while MoneyDrop do
