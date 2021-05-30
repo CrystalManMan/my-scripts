@@ -20,6 +20,17 @@
 getgenv().Gun = "TacticalShotgun" -- change this to whatever gun you want to buy
 getgenv().CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
 
+function Notification(text)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Da Hood",
+        Text = text,
+        Icon = "rbxassetid://0",
+        Duration = 3,
+    })
+end
+
+Notification("Buy Any Gun by zefify/REVlENGE")
+
 if getgenv().Gun == "TacticalShotgun" then
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[TacticalShotgun] - $1750"].Head.CFrame
     wait(0.25)
