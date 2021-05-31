@@ -1,4 +1,4 @@
-getgenv().CollectNearbyMoney = true
+getgenv().CollectNearbyMoney = true -- Execute getgenv().CollectNearbyMoney = false to turn off collect nearby money
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
