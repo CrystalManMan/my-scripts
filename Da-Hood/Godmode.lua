@@ -7,7 +7,7 @@ function Notification(text)
     })
 end
 
-Notification("Godmode made by zefify/REVlENGE")
+Notification("Godmode by zefify/REVlENGE")
 
 function Godmode()
     if game:GetService("Players").LocalPlayer.Character.BodyEffects:FindFirstChild("Attacking") then
