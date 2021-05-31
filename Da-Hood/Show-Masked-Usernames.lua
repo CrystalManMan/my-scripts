@@ -1,3 +1,5 @@
+getgenv().ShowMaskedUsernames = true -- Execute getgenv().ShowMaskedUsernames = false to turn off show masked usernames
+
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
         Title = "Da Hood",
@@ -20,5 +22,7 @@ function SMU()
 end
 
 game:GetService("RunService").Stepped:Connect(function()
-    SMU()
+    if getgenv().ShowMaskedUsernames == true then
+        SMU()
+    end
 end)
