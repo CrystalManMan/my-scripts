@@ -23,7 +23,7 @@ function Notification(text)
     })
 end
 
-Notification("Anti Fly Bypass by zefify/REVlENGE")
+Notification("Anti Cheat Bypass by zefify/REVlENGE")
 
 function RAC()
     for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
