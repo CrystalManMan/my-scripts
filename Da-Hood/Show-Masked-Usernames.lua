@@ -16,7 +16,7 @@ function SMU()
         if v and v.Character:FindFirstChild("In-gameMask") then
             if v.Character:FindFirstChild("In-gameMask")[""] then
                 v.Character:FindFirstChild("In-gameMask")[""].Name = v.Name
-                print(v.Name:lower().."'s name is now visible")
+                print(v.Name.."'s name is now visible")
             end
         end
     end
