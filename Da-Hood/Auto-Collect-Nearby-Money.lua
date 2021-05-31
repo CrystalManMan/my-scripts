@@ -15,7 +15,7 @@ function FindMoneyNearby()
     for i,v in pairs(game:GetService("Workspace").Ignored.Drop:GetChildren()) do
         if v.Name == "MoneyDrop" then
             if (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position - v.Position).Magnitude <= 12 then -- Dont put the magnitude above 12
-                wait(0.25)
+                wait(0.25) -- Change the collect delay if you want to
                 fireclickdetector(v.ClickDetector)
             end
         end
