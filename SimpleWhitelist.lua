@@ -1,4 +1,5 @@
 --// THIS IS A SIMPLE WHITELIST \\--
+--// I SUGGEST NOT USING THIS IF YOU'RE MAKING A PAID SCRIPT \\--
 
 local Player = game:GetService("Players").LocalPlayer
 local UserIdWhitelist = {
