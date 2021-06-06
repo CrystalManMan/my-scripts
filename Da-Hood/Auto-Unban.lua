@@ -1,4 +1,4 @@
-getgenv().AutoUnban = true
+getgenv().AutoUnban = true -- Execute getgenv().AutoUnban = false to turn off auto unban
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
