@@ -14,7 +14,10 @@ Notification("Noclip by zefify/REVlENGE")
 game:GetService("RunService").Stepped:Connect(function()
     if getgenv().Noclip == true and game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
         pcall(function()
-            game:GetService("Players").LocalPlayer.Character:FindFirstChildWhichIsA("BasePart").CanCollide = false
+            game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CanCollide = false
+            game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head").CanCollide = false
+            game:GetService("Players").LocalPlayer.Character:FindFirstChild("UpperTorso").CanCollide = false
+            game:GetService("Players").LocalPlayer.Character:FindFirstChild("LowerTorso").CanCollide = false
             game:GetService("Players").LocalPlayer.Character.Humanoid.Sit = false
         end)
     end
