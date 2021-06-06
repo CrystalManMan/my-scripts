@@ -1,4 +1,4 @@
--- Made this cause some of you Da Hood scripters dont know how to make a simple rejoin script and instead make a serverhop script :rofl:
+-- Made this since some of you Da Hood scripters dont know how to make a simple rejoin script and instead make a serverhop script :rofl:
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
