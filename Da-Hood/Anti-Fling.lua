@@ -13,8 +13,8 @@ end
 Notification("Anti Fling by zefify/REVlENGE")
 
 function RFT()
-    if game:GetService("Players"):FindFirstChild(FlingTarget).Character then
-        game:GetService("Players"):FindFirstChild(FlingTarget).Character:Destroy()
+    if game:GetService("Players"):FindFirstChild(getgenv().FlingTarget).Character then
+        game:GetService("Players"):FindFirstChild(getgenv().FlingTarget).Character:Destroy()
     end
 end
 
