@@ -13,7 +13,7 @@ Notification("Show Masked Usernames by zefify/REVlENGE")
 
 function SMU()
     for i,v in pairs(game:GetService("Players"):GetChildren()) do
-        if v and v.Character:FindFirstChild("In-gameMask") then
+        if v and v.Character:FindFirstChild("In-gameMask") and v ~= game:GetService("Players").LocalPlayer then
             if v.Character:FindFirstChild("In-gameMask")[""] then
                 v.Character:FindFirstChild("In-gameMask")[""].Name = v.Name
                 print(v.Name.."'s name is now visible") -- I was using this for testing, delete if you want to
