@@ -23,7 +23,7 @@ local Val = Instance.new("BoolValue", Char)
 Val.Name = "RagdollConstraints"
 
 game:GetService("RunService").Stepped:Connect(function()
-    if getgenv().AutoUnban == true and game:GetService("Players").LocalPlayer.Character.BodyEffects:FindFirstChild("K.O").Value == true or game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 then
+    if getgenv().AutoUnban == true and game:GetService("Players").LocalPlayer.Character.BodyEffects:FindFirstChild("K.O").Value == true then
         game:GetService("Players").LocalPlayer.Character.BodyEffects:FindFirstChild("K.O").Value = false
         wait()
         game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(15)
