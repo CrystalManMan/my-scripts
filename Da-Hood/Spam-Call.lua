@@ -3,7 +3,7 @@ getgenv().SpamCallTarget = "Player123" -- Change this to the name of the player 
 
 function SPC()
     if game:GetService("Players").LocalPlayer.Character:FindFirstChild("[Phone]") or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("[Phone]") then
-        game:GetService("ReplicatedStorage").MainEvent:FireServer("PhoneCall", SpamCallTarget)
+        game:GetService("ReplicatedStorage").MainEvent:FireServer("PhoneCall", getgenv().SpamCallTarget)
     end
 end
 
