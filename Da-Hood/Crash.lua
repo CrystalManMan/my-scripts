@@ -68,7 +68,6 @@ game:GetService("RunService").Stepped:Connect(function()
     end
     if HoldingCrash == true then
         if Money <= 1000 then -- You're probably going to need atleast 100k aswell but this version is going to take longer since you will have less tasers
-            HoldingCrash = false
             wait()
             game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
             wait()
