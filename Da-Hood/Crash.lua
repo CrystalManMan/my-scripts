@@ -17,6 +17,17 @@ wait(0.5)
 
 game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Crash").Parent = game:GetService("Players").LocalPlayer.Character
 
+function Notification(text)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Da Hood",
+        Text = text,
+        Icon = "rbxassetid://0",
+        Duration = math.huge,
+    })
+end
+
+Notification("Crash by zefify/REVlENGE")
+
 game:GetService("RunService").Stepped:Connect(function()
     if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Crash") then
         HoldingCrash = true
