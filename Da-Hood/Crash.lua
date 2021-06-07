@@ -8,6 +8,18 @@ pcall(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LEWISLEWISLEWISLEWISLEWIS/my-scripts/main/Da-Hood/Godblock.lua"))()
 end)
 
+wait(0.5)
+
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Ninja Mask] - $60"].Head.CFrame
+wait(0.5)
+fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Ninja Mask] - $60"].ClickDetector)
+wait(0.5)
+game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Mask").Parent = game:GetService("Players").LocalPlayer.Character
+wait(0.5)
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Mask"):Activate()
+wait(0.5)
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Mask").Parent = game:GetService("Players").LocalPlayer.Backpack
+
 Money = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
 Tool = Instance.new("Tool", game:GetService("Players").LocalPlayer.Backpack)
 Tool.Name = "Crash"
