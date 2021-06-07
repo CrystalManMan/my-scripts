@@ -25,7 +25,7 @@ game:GetService("RunService").Stepped:Connect(function()
         HoldingCrash = false
     end
     if HoldingCrash == true then
-        if Money > 100000 then -- You're probably gonna need atleast 100k
+        if Money > 1000 then -- You're probably gonna need atleast 100k
             game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
             wait()
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Taser] - $1000"].Head.CFrame
