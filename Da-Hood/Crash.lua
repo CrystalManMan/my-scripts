@@ -48,7 +48,7 @@ game:GetService("RunService").Stepped:Connect(function()
         HoldingCrash = false
     end
     if HoldingCrash == true then
-        if Money > 1000 then -- You're probably going to need atleast 100k
+        if Money > 1000 then -- You're probably going to need atleast 100k (Faster version)
             game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
             wait()
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Taser] - $1000"].Head.CFrame
@@ -67,7 +67,7 @@ game:GetService("RunService").Stepped:Connect(function()
         end
     end
     if HoldingCrash == true then
-        if Money <= 1000 then -- You're probably going to need atleast 100k aswell but this version is going to take longer since you will have less tasers
+        if Money <= 1000 then -- You're probably going to need atleast 100k aswell but this version is going to take longer since you will have less tasers (Slower version)
             wait()
             game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
             wait()
