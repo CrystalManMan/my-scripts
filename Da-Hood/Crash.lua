@@ -23,11 +23,12 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Mask").Parent =
 Money = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
 Tool = Instance.new("Tool", game:GetService("Players").LocalPlayer.Backpack)
 Tool.Name = "Crash"
-Tool.ToolTip = "Hold this tool to buy tasers"
+Tool.ToolTip = "Hold to buy tasers"
 
 wait(0.5)
 
 game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Crash").Parent = game:GetService("Players").LocalPlayer.Character
+game:GetService("Players").LocalPlayer.PlayerGui.Framework.CurrencySound.Volume = 0
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -69,6 +70,8 @@ game:GetService("RunService").Stepped:Connect(function()
     if HoldingCrash == true then
         if Money <= 150000 then -- You're probably going to need atleast 150k aswell but this version is going to take longer since you will have less tasers (Slower version)
             game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
+            wait()
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Taser] - $1000"].Head.CFrame
             wait()
             game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
             wait()
