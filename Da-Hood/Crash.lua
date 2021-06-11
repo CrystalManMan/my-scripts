@@ -41,6 +41,16 @@ end
 
 Notification("Crash by zefify/REVlENGE")
 
+function Sound()
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+        if v:IsA("Tool") and v.Name == "[Taser]" then
+            if v.Handle.Sound.Volume ~= 0 then
+                v.Handle.Sound.Volume = 0
+            end
+        end
+    end
+end
+
 game:GetService("RunService").Stepped:Connect(function()
     if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Crash") then
         HoldingCrash = true
@@ -60,6 +70,8 @@ game:GetService("RunService").Stepped:Connect(function()
             wait()
             game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("[Taser]").Parent = game:GetService("Players").LocalPlayer.Character
             wait()
+            Sound()
+            wait()
             for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
                 if v:IsA("Tool") and v.Name == "[Taser]" then
                     v:Activate()
@@ -74,6 +86,8 @@ game:GetService("RunService").Stepped:Connect(function()
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Taser] - $1000"].Head.CFrame
             wait()
             game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            wait()
+            Sound()
             wait()
             for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
                 if v:IsA("Tool") and v.Name == "[Taser]" then
