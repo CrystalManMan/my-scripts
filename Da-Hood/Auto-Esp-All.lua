@@ -32,8 +32,22 @@ function ESP()
     end
 end
 
+function UNESP()
+    wait(1)
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do
+        if v.Character.Head and v ~= game:GetService("Players").LocalPlayer then
+            if v.Character.Head:FindFirstChild("ESP") then
+                v.Character.Head:FindFirstChild("ESP"):Destroy()
+            end
+        end
+    end
+end
+
 game:GetService("RunService").Heartbeat:Connect(function()
     if getgenv().AUTOESPALL == true then
         ESP()
+    end
+    if getgenv().AUTOESPALL == false then
+        UNESP()
     end
 end)
