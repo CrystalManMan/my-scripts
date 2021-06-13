@@ -1,5 +1,16 @@
 getgenv().AUTOESPALL = true -- Execute getgenv().AUTOESPALL = false to turn off auto esp all
 
+function Notification(text)
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Da Hood",
+        Text = text,
+        Icon = "rbxassetid://0",
+        Duration = 3,
+    })
+end
+
+Notification("Auto Esp All by zefify/REVlENGE")
+
 function ESP()
     wait(1)
     for i,v in pairs(game:GetService("Players"):GetChildren()) do
