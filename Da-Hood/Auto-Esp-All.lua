@@ -1,4 +1,4 @@
-getgenv().AUTOESPALL = true -- Execute getgenv().ESPALL = false to turn off auto esp all
+getgenv().AUTOESPALL = true -- Execute getgenv().AUTOESPALL = false to turn off auto esp all
 
 function ESP()
     wait(1)
