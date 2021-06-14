@@ -150,6 +150,6 @@ game:GetService("Players").LocalPlayer.Character.Humanoid.Died:Connect(function(
     until game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 100
     wait()
     pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LEWISLEWISLEWISLEWISLEWIS/my-scripts/main/Da-Hood/Free-Animation-Pack"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LEWISLEWISLEWISLEWISLEWIS/my-scripts/main/Da-Hood/Free-Animation-Pack.lua"))()
     end)
 end)
