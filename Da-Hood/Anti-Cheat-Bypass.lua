@@ -5,7 +5,6 @@ setreadonly(MT, false)
 MT.__namecall = newcclosure(function(self, ...)
     local A = {...}
     local GNCM = getnamecallmethod() or get_namecall_method()
-    
     if GNCM == "FireServer" and self.Name == "MainEvent" then
         return wait(9e9)
     end
