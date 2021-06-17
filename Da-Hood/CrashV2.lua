@@ -1,3 +1,4 @@
+-- CrashV2 allows you to walk about while crashing unlike CrashV1
 game:GetService("RunService").Stepped:Connect(function()
     if (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position - game:GetService("Workspace").Ignored.Shop["[Taser] - $1000"].Head.Position).Magnitude <= 9 then -- Dont put the magnitude above 9
         fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Taser] - $1000"].ClickDetector)
