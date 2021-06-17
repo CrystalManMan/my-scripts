@@ -35,7 +35,7 @@ function Notification(text)
         Title = "Da Hood",
         Text = text,
         Icon = "rbxassetid://0",
-        Duration = math.huge,
+        Duration = 3,
     })
 end
 
