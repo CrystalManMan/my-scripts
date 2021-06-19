@@ -11,14 +11,15 @@ end
 
 Notification("Anti Flashbang by zefify/REVlENGE")
 
-function RFB()
+function AntiFlashbang()
     if game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("whiteScreen") then
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("whiteScreen"):Destroy()
     end
 end
 
-game:GetService("RunService").Stepped:Connect(function()
-    if getgenv().AntiFlashbang == true then
-        RFB()
+if getgenv().AntiFlashbang == true then
+    while getgenv().AntiFlashbang == true do
+        AntiFlashbang()
+        wait()
     end
-end)
+end
