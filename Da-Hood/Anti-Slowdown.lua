@@ -11,7 +11,7 @@ end
 
 Notification("Anti Slowdown by zefify/REVlENGE")
 
-function AS()
+function AntiSlowdown()
     MovementValues = game:GetService("Players").LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("NoJumping") or game:GetService("Players").LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("ReduceWalk") or game:GetService("Players").LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("NoWalkSpeed")
     if MovementValues then
         MovementValues:Destroy()
@@ -23,7 +23,7 @@ end
 
 if getgenv().AntiSlowdown == true then
     while getgenv().AntiSlowdown == true do
-        AS()
+        AntiSlowdown()
         wait()
     end
 end
