@@ -8,7 +8,6 @@ MT.__namecall = newcclosure(function(self, ...)
     if GNCM == "FireServer" and self.Name == "MainEvent" then
         return wait(9e9)
     end
-    
     return NC(self, unpack(A))
 end)
 setreadonly(MT, true)
