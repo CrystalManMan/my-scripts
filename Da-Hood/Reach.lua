@@ -4,6 +4,7 @@
     SledgeHammer
     Shovel
     Pitchfork
+    StopSign
 ]]--
 
 function Notification(text)
@@ -56,6 +57,17 @@ function Reach(Tool)
                             Pitchfork.Handle.Size = Vector3.new(50, 50, 50)
                             Pitchfork.Handle.Transparency = 1
                             Notification("Reach is now on Pitchfork")
+                        end
+                    else
+                        if Tool == "StopSign" then
+                            local StopSign = game:GetService("Players").LocalPlayer.Character:FindFirstChild("[StopSign]") or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("[StopSign]")
+                            if StopSign then
+                                StopSign.Handle.Size = Vector3.new(50, 50, 50)
+                                StopSign.Handle.Transparency = 1
+                                StopSign.Sign.Transparency = 1
+                                StopSign.Sign.Decal:Destroy()
+                                StopSign.Sign.Decal:Destroy()
+                            end
                         end
                     end
                 end
