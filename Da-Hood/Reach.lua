@@ -67,6 +67,7 @@ function Reach(Tool)
                                 StopSign.Sign.Transparency = 1
                                 StopSign.Sign.Decal:Destroy()
                                 StopSign.Sign.Decal:Destroy()
+                                Notification("Reach is now on StopSign")
                             end
                         end
                     end
