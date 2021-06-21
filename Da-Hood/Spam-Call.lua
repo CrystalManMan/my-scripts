@@ -1,5 +1,5 @@
 getgenv().SpamPhoneCall = true -- Execute getgenv().SpamPhoneCall = false to turn off spam phone call
-getgenv().SpamCallTarget = "Player123" -- Change this to the name of the player you want to spam call (Make sure to add the capital letters)
+getgenv().SpamCallTarget = "Player" -- Change this to the name of the player you want to spam call (Make sure to add the capital letters)
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
