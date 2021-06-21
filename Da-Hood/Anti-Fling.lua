@@ -1,5 +1,5 @@
 getgenv().AntiFling = true -- Execute getgenv().AntiFling = false to turn off anti fling
-getgenv().FlingTarget = "Player123" -- Change this to the name of the player flinging you (Make sure to add the capital letters)
+getgenv().FlingTarget = "Player" -- Change this to the name of the player flinging you (Make sure to add the capital letters)
 
 function Notification(text)
     game:GetService("StarterGui"):SetCore("SendNotification",{
