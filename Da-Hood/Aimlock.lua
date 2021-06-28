@@ -37,6 +37,7 @@ end)
 local MT = getrawmetatable(game)
 local NC = MT.__namecall
 setreadonly(MT, false)
+
 MT.__namecall = newcclosure(function(self, ...)
     local A = {...}
     local GNCM = getnamecallmethod() or get_namecall_method()
